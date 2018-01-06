@@ -4,33 +4,52 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import './index.css'
+import './style.css'
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
+  <div className="header">
+    {/* <div className="top-nav">
+      <span className="nav-item">Home</span>
+      <span className="nav-item">Contact Us</span>
+    </div> */}
+    <div className="header-title">
+      <h1 style={{
+        margin: 0,
+        background: '#212F3D',
+       }}>
+        <Link to="/" className="link-style">
+          Practical Systems
         </Link>
       </h1>
+      <h3 className="sub-title">Professional Organization</h3>
     </div>
+  </div>
+)
+
+const Hero = () => (
+  <div className="hero-image">
+
+  </div>
+)
+
+const Footer = () => (
+  <div className="footer">
+    <p style={{ background: '#212F3D' }}>
+      Copyright © 2015 Practical Systems, LLC. </p>
+    <p style={{ background: '#212F3D' }}>All rights reserved.​</p>
+    {/* <ul style={{
+        listStyle: 'none',
+        margin: 0,
+      }}
+    >
+      <li style={{ margin: 0 }}>
+        <Link to="/" className="link-style">Home</Link>
+      </li>
+      <li style={{ margin: 0 }}>
+        <Link to="/page-2/" className="link-style">Contact Us</Link>
+      </li>
+      <li style={{ margin: 0 }}>Women Owned</li>
+    </ul> */}
   </div>
 )
 
@@ -43,17 +62,13 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    <Hero />
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+    {/* <Hero /> */}
+    <div className="main">
       {children()}
     </div>
+    <Footer />
   </div>
 )
 

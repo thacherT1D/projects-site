@@ -3,4 +3,8 @@
 $md-primary-color: $md-teal-500;
 $md-secondary-color: $md-lime-a-400;
 
+div {
+  background-color: $md-primary-color;
+}
+
 @include react-md-everything;
