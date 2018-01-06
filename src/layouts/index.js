@@ -8,48 +8,29 @@ import './style.css'
 
 const Header = () => (
   <div className="header">
-    {/* <div className="top-nav">
-      <span className="nav-item">Home</span>
-      <span className="nav-item">Contact Us</span>
-    </div> */}
     <div className="header-title">
       <h1 style={{
         margin: 0,
         background: '#212F3D',
        }}>
         <Link to="/" className="link-style">
-          Practical Systems
+          Company Name
         </Link>
       </h1>
-      <h3 className="sub-title">Professional Organization</h3>
+      <h3 className="sub-title">SubTitle</h3>
     </div>
   </div>
 )
 
 const Hero = () => (
-  <div className="hero-image">
-
-  </div>
+  <div className="hero-image"></div>
 )
 
 const Footer = () => (
   <div className="footer">
     <p style={{ background: '#212F3D' }}>
-      Copyright © 2015 Practical Systems, LLC. </p>
+      Copyright © 2018 Fun Things </p>
     <p style={{ background: '#212F3D' }}>All rights reserved.​</p>
-    {/* <ul style={{
-        listStyle: 'none',
-        margin: 0,
-      }}
-    >
-      <li style={{ margin: 0 }}>
-        <Link to="/" className="link-style">Home</Link>
-      </li>
-      <li style={{ margin: 0 }}>
-        <Link to="/page-2/" className="link-style">Contact Us</Link>
-      </li>
-      <li style={{ margin: 0 }}>Women Owned</li>
-    </ul> */}
   </div>
 )
 
